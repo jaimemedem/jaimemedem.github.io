@@ -137,6 +137,7 @@ header .menu a:hover {
 }
 
 .contenedor a{
+  display: flex;
   font: 18px sans-serif;
   text-align: center;
   text-decoration: none;
@@ -146,9 +147,12 @@ header .menu a:hover {
   user-select: none;
 }
 
+.contenedor li{
+    flex: 1 1 0;
+}
+
 .contenedor li:hover {
     background: linear-gradient(45deg, darkslategray, slategray, teal);
-    background-size: 300% 300%;
 }
 
 
@@ -205,7 +209,18 @@ cta {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  
+
+
+p{
+    margin: 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    color: red;
+}
 
 
 footer {
@@ -215,4 +230,51 @@ footer {
     padding: 1.5em 0;
     margin-top: 2em;
     font-size: 0.9em;
+}
+
+.form-container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button {
+    margin-top: 15px;
+    padding: 20px;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: darkslategray;
 }
